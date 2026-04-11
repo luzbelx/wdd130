@@ -1,7 +1,7 @@
 :root {
   --primary-color: #05497a;
   --secondary-color: #456e8f;
-  --accent1-color: #82ccdd;
+  --accent1-color: #000000;
   --accent2-color: #60a3bc;
 
   --heading-font: Arial, sans-serif;
@@ -78,6 +78,12 @@ h1 {
   text-decoration: none
 }
 
+footer{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+
 /* HEADER GRID */
 .header-grid {
   display: grid;
@@ -108,4 +114,120 @@ nav {
 
 .adventure-gallery img {
   width: 100%;
+}
+
+
+
+/* CONTACT PAGE */
+.contact-info,
+.map,
+.employees,
+.contact-form {
+  margin: 2rem 0;
+}
+
+/* Employees layout */
+.employees {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.employees figure {
+  text-align: center;
+}
+
+.employees img {
+  width: 150px;
+  border-radius: 10px;
+}
+
+/* Map */
+.map iframe {
+  width: 100%;
+  max-width: 600px;
+  border: none;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* Button styling */
+button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+}
+
+
+
+
+.contact-info,
+.map,
+.employees,
+.contact-form {
+  margin: 2rem 0;
+}
+
+.employees {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.employees figure {
+  text-align: center;
+}
+
+.employees img {
+  width: 150px;
+  border-radius: 10px;
+}
+
+.map iframe {
+  width: 100%;
+  max-width: 600px;
+  border: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+}
+
+textarea {
+  min-height: 100px;
+}
+
+button {
+  background-color: #0077cc;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #005fa3;
 }
