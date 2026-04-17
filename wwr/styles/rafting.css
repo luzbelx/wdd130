@@ -39,7 +39,7 @@ h1, h2 {
 }
 
 /* SPACING */
-p, article {
+p {
   margin: 16px;
 }
 
@@ -62,11 +62,12 @@ section {
 nav {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap; /* FIX responsive */
 }
 
 nav a {
   text-decoration: none;
-  color: var(--primary-color);
+  color: #084c7a; /* FIX contraste */
   font-weight: bold;
   transition: 0.3s;
 }
@@ -81,27 +82,34 @@ nav a:hover {
   position: relative;
 }
 
-
 .hero h1 {
   position: absolute;
   top: 20px;
   width: 100%;
   padding: 16px;
   text-align: center;
-  background-color: rgba(15, 23, 42, 0.7);
+  background-color: rgba(15, 23, 42, 0.8); /* más contraste */
   color: white;
 }
 
+/* HERO ARTICLE MEJORADO */
 .hero article {
   position: absolute;
   bottom: 20px;
-  background-color: rgba(0, 0, 0, 0.8);
+  left: 20px;
+  right: 20px;
+  padding: 15px;
+  display: flex; /* reemplazo de float */
+  gap: 15px;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.9); /* FIX contraste */
   color: white;
+  border-radius: 10px;
 }
 
 .hero article img {
-  float: right;
   width: 125px;
+  border-radius: 10px;
 }
 
 /* SECTIONS */
@@ -131,15 +139,19 @@ section {
 }
 
 .history-grid p {
-  font-size: 14px;
+  font-size: 15px; /* FIX contraste */
   line-height: 1.5;
 }
 
 /* ADVENTURES */
 .adventure-gallery {
   display: flex;
-  justify-content: space-between;
   gap: 10px;
+  flex-wrap: wrap; /* FIX responsive */
+}
+
+.adventure-gallery figure {
+  flex: 1 1 150px;
 }
 
 .adventure-gallery img {
@@ -259,7 +271,6 @@ footer {
   color: white;
   padding: 15px;
   border-radius: 10px 10px 0 0;
-
   margin-top: 20px;
   border-top: 3px solid #000;
   text-align: center;
@@ -274,7 +285,7 @@ footer p {
 }
 
 .socialmedia img {
-  filter: invert(1);
+  filter: invert(1) brightness(2); /* FIX contraste */
 }
 
 /* NEWSLETTER */
@@ -311,6 +322,8 @@ footer p {
 .home-grid img {
   width: 100%;
   border-radius: 12px;
+  max-height: 180px;
+  object-fit: cover;
 }
 
 /* TRIPS */
@@ -322,6 +335,8 @@ footer p {
 
 .trip img {
   width: 100%;
+  max-height: 200px;
+  object-fit: cover;
   border-radius: 12px;
 }
 
@@ -342,51 +357,21 @@ th {
   color: white;
 }
 
-
-aside {
-  width: 300px;
-  margin: 20px auto;
-  border: 1px solid #ccc;
-  padding: 15px;
-  background-color: #f4f4f4;
-  color: #333;
-  text-align: center;
-}
-
-aside img {
-  width: 200px;
-  height: auto;
-}
-
-
-.profile img {
-  width: 150px;
-  height: auto;
-}
-
-/* CONTROL GLOBAL DE IMÁGENES */
+/* GLOBAL IMAGES */
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* HERO OPTIMIZADO */
+/* HERO IMG */
 .hero img {
   width: 100%;
   max-height: 400px;
   object-fit: cover;
 }
 
-/* TRIPS */
-.trip img {
-  width: 100%;
-  max-height: 200px;
-  object-fit: cover;
-}
-
-/* HOME GRID */
-.home-grid img {
-  max-height: 180px;
-  object-fit: cover;
+/* BONUS */
+html {
+  scroll-behavior: smooth;
 }
