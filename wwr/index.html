@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Experience the best rafting adventures.">
+  <meta name="description" content="Join Rafting Adventure Company for thrilling white water rafting trips, expert guides, and unforgettable outdoor experiences.">
   <meta name="author" content="Eidhan Cuevas">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home | Rafting Adventure</title>
@@ -12,7 +12,7 @@
 <body>
 <header class="header-grid">
   <img src="images/logo.png" alt="Rafting Logo" loading="lazy">
-  <nav>
+  <nav aria-label="Main Navigation">
     <a href="index.html">Home</a>
     <a href="about.html">About Us</a>
     <a href="trips.html">Trips</a>
@@ -21,15 +21,17 @@
 </header>
 
 <main>
-  <div class="hero">
+  <!-- HERO -->
+  <section class="hero">
     <img src="images/pagesize.jpg" alt="Rafting adventure" loading="lazy">
     <h1>Rafting Adventure Company</h1>
     <h2>Experience the Ultimate Rafting Adventure</h2>
-  </div>
+  </section>
 
+  <!-- NEWSLETTER -->
   <section class="newsletter">
     <h2>Join Our Newsletter</h2>
-    <form>
+    <form action="#" method="post">
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" required>
 
@@ -40,11 +42,13 @@
     </form>
   </section>
 
+  <!-- CTA -->
   <section class="cta">
     <h2>Ready for Your Next Adventure?</h2>
     <a href="trips.html" class="cta-button">View Trips</a>
   </section>
 
+  <!-- GRID CONTENT -->
   <section class="home-grid">
     <div>
       <img src="images/raftingexp.jpg" alt="Rafting experience" loading="lazy">
@@ -67,12 +71,12 @@
 </main>
 
 <footer>
-    <p>© 2026 Rafting Adventure | Eidhan Cuevas</p>
-    <nav class="socialmedia">
-        <a href="#"><img src="images/facebook.svg" alt="Facebook" width="30" loading="lazy"></a>
-        <a href="#"><img src="images/instagram.svg" alt="Instagram" width="30" loading="lazy"></a>
-        <a href="#"><img src="images/x.svg" alt="Twitter" width="30" loading="lazy"></a>
-    </nav>
-  </footer>
+  <p>© 2026 Rafting Adventure | Eidhan Cuevas</p>
+  <nav class="socialmedia">
+    <a href="#"><img src="images/facebook.svg" alt="Facebook" width="30" loading="lazy"></a>
+    <a href="#"><img src="images/instagram.svg" alt="Instagram" width="30" loading="lazy"></a>
+    <a href="#"><img src="images/x.svg" alt="Twitter" width="30" loading="lazy"></a>
+  </nav>
+</footer>
 </body>
 </html>
