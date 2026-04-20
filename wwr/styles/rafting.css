@@ -375,3 +375,38 @@ img {
 html {
   scroll-behavior: smooth;
 }
+
+/* HERO FULL WIDTH */
+.hero {
+  position: relative;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
+
+/* HERO TEXT FIX */
+.hero h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(15, 23, 42, 0.7);
+  color: white;
+  padding: 16px;
+}
+
+.hero h2 {
+  position: absolute;
+  top: 90px;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+/* MEJOR UX */
+section {
+  transition: transform 0.3s ease;
+}
+
+section:hover {
+  transform: translateY(-5px);
+}
