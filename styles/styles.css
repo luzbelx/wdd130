@@ -2,7 +2,9 @@ css
 /* Navigation */
 nav {
     background-color: steelblue;
-    padding: 10px;
+    padding: 15px;
+    display: flex;
+    gap: 20px;
 }
 
 nav a {
@@ -10,8 +12,8 @@ nav a {
     padding: 10px;
     display: inline-block;
     text-decoration: none;
+    font-weight: bold;
 }
-
 /* Main content */
 main {
     max-width: 840px;
