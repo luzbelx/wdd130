@@ -59,3 +59,19 @@ footer {
     text-align: center;
 }
 
+/* Home Page Navigation Fix */
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: steelblue;
+    padding: 15px;
+}
+
+header nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
